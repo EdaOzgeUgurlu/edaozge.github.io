@@ -5,128 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Eda Özge Uğurlu | Portföy</title>
   <meta name="description" content="Eda Özge Uğurlu'nun kişisel portföy ve proje sayfası." />
-  <style>
-    :root{
-      --bg:#0f172a;
-      --card:#111827;
-      --soft:#1f2937;
-      --text:#e5e7eb;
-      --muted:#9ca3af;
-      --accent:#22c55e;
-      --accent2:#38bdf8;
-      --max:980px;
-      --radius:16px;
-    }
-
-    *{box-sizing:border-box;margin:0;padding:0}
-    html,body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:linear-gradient(180deg,#0b1023,#111827);color:var(--text);scroll-behavior:smooth}
-    a{text-decoration:none;color:inherit}
-
-    .container{max-width:var(--max);margin:0 auto;padding:24px}
-
-    header{
-      position:sticky;top:0;z-index:100;
-      background:rgba(15,23,42,.7);
-      backdrop-filter: blur(10px);
-      border-bottom:1px solid rgba(255,255,255,.08);
-    }
-    .nav{
-      display:flex;align-items:center;justify-content:space-between;gap:16px;
-      padding:14px 24px;max-width:var(--max);margin:0 auto;
-    }
-    .logo{font-weight:800;letter-spacing:.3px}
-    .logo span{color:var(--accent)}
-    .menu{display:flex;gap:14px;flex-wrap:wrap}
-    .menu a{
-      padding:8px 12px;border-radius:10px;color:var(--muted);font-weight:600;
-      transition:.2s;
-    }
-    .menu a:hover{background:rgba(255,255,255,.06);color:var(--text)}
-
-    .hero{
-      padding:72px 24px 32px;
-      max-width:var(--max);margin:0 auto;
-      display:grid;gap:18px;
-    }
-    .badge{
-      width:max-content;
-      background:rgba(34,197,94,.18);
-      color:#86efac;
-      border:1px solid rgba(34,197,94,.35);
-      padding:6px 12px;border-radius:999px;font-size:.88rem;font-weight:700;
-    }
-    h1{font-size:clamp(1.9rem,4vw,3rem);line-height:1.15}
-    .hero p{color:var(--muted);font-size:1.05rem;line-height:1.7;max-width:760px}
-    .hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:6px}
-    .btn{
-      display:inline-flex;align-items:center;justify-content:center;
-      padding:11px 16px;border-radius:12px;font-weight:700;transition:.2s;
-      border:1px solid transparent;
-    }
-    .btn-primary{background:var(--accent);color:#052e16}
-    .btn-primary:hover{filter:brightness(1.05)}
-    .btn-soft{
-      background:rgba(255,255,255,.04);
-      color:var(--text);
-      border-color:rgba(255,255,255,.12);
-    }
-    .btn-soft:hover{background:rgba(255,255,255,.08)}
-
-    section{padding:26px 24px}
-    .section-title{
-      font-size:1.4rem;margin-bottom:14px
-    }
-    .section-sub{color:var(--muted);margin-bottom:20px}
-
-    .projects{
-      max-width:var(--max);margin:0 auto;
-      display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px;
-    }
-    .card{
-      background:linear-gradient(180deg,rgba(255,255,255,.04),rgba(255,255,255,.02));
-      border:1px solid rgba(255,255,255,.1);
-      border-radius:var(--radius);
-      padding:16px;
-      transition:.25s;
-    }
-    .card:hover{transform:translateY(-2px);border-color:rgba(56,189,248,.5)}
-    .card h3{font-size:1.05rem;margin-bottom:8px}
-    .card p{color:var(--muted);line-height:1.6;font-size:.95rem}
-    .tags{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
-    .tag{
-      font-size:.78rem;
-      padding:4px 8px;border-radius:999px;
-      background:rgba(56,189,248,.15);color:#7dd3fc;border:1px solid rgba(56,189,248,.35);
-    }
-
-    .about, .contact{
-      max-width:var(--max);margin:0 auto;
-      background:rgba(255,255,255,.03);
-      border:1px solid rgba(255,255,255,.08);
-      border-radius:var(--radius);
-      padding:18px;
-    }
-    .about p,.contact p{color:var(--muted);line-height:1.75}
-
-    .socials{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px}
-    .social{
-      padding:9px 12px;border-radius:10px;border:1px solid rgba(255,255,255,.15);
-      background:rgba(255,255,255,.02);color:var(--text);font-weight:600;
-    }
-    .social:hover{border-color:rgba(34,197,94,.55);color:#bbf7d0}
-
-    footer{
-      padding:26px 24px 40px;color:var(--muted);text-align:center;
-      font-size:.92rem
-    }
-
-    @media (max-width:640px){
-      .nav{padding:12px 16px}
-      .hero{padding:62px 16px 26px}
-      section{padding:22px 16px}
-      .container{padding:16px}
-    }
-  </style>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
@@ -146,11 +25,10 @@
       <h1>Merhaba, ben Eda Özge Uğurlu 👋</h1>
       <p>
         Bu sayfada şahsi projelerimi, öğrendiğim teknolojileri ve ürettiğim işleri paylaşıyorum.
-        Amacım sade, hızlı ve anlaşılır çözümler geliştirmek.
       </p>
       <div class="hero-actions">
         <a class="btn btn-primary" href="#projeler">Projeleri Gör</a>
-        <a class="btn btn-soft" href="#iletisim">Benimle İletişime Geç</a>
+        <a class="btn btn-soft" href="#iletisim">İletişime Geç</a>
       </div>
     </section>
 
@@ -163,9 +41,7 @@
       <div class="projects">
         <article class="card">
           <h3>Proje 1 - Blog Tasarımı</h3>
-          <p>
-            Kişisel yazılar, notlar ve deneyimleri paylaştığım minimal blog arayüzü.
-          </p>
+          <p>Kişisel yazılar ve notlar için minimal blog arayüzü.</p>
           <div class="tags">
             <span class="tag">HTML</span>
             <span class="tag">CSS</span>
@@ -175,9 +51,7 @@
 
         <article class="card">
           <h3>Proje 2 - Portföy Sayfası</h3>
-          <p>
-            Kendi çalışmalarımı tek sayfada sunduğum modern, hızlı ve temiz kişisel web sitesi.
-          </p>
+          <p>Kendi çalışmalarını tek sayfada sunduğun modern kişisel site.</p>
           <div class="tags">
             <span class="tag">UI</span>
             <span class="tag">Web</span>
@@ -187,9 +61,7 @@
 
         <article class="card">
           <h3>Proje 3 - Yakında</h3>
-          <p>
-            Yeni bir proje üzerinde çalışıyorum. Çok yakında burada paylaşacağım.
-          </p>
+          <p>Yeni bir proje üzerinde çalışıyorum. Çok yakında eklenecek.</p>
           <div class="tags">
             <span class="tag">WIP</span>
             <span class="tag">Learning</span>
@@ -202,9 +74,8 @@
       <div class="about">
         <h2 class="section-title">Hakkımda</h2>
         <p>
-          Yazılım geliştirme ve dijital üretim süreçlerine ilgi duyuyorum. Öğrenmeyi ve ürettiklerimi
-          görünür hale getirmeyi seviyorum. Bu alanı hem kişisel gelişimim hem de iş örneklerimi
-          paylamak için kullanıyorum.
+          Yazılım geliştirme ve dijital üretim süreçlerine ilgi duyuyorum.
+          Bu alanı hem gelişimim hem de projelerimi paylaşmak için kullanıyorum.
         </p>
       </div>
     </section>
@@ -214,9 +85,9 @@
         <h2 class="section-title">İletişim</h2>
         <p>Bana aşağıdaki bağlantılardan ulaşabilirsin:</p>
         <div class="socials">
-          <a class="social" href="mailto:ornekmail@domain.com">E-posta</a>
-          <a class="social" href="https://github.com/" target="_blank" rel="noopener">GitHub</a>
-          <a class="social" href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
+          <a class="social" href="mailto:mailadresin@example.com">E-posta</a>
+          <a class="social" href="https://github.com/kullaniciadin" target="_blank" rel="noopener">GitHub</a>
+          <a class="social" href="https://www.linkedin.com/in/kullaniciadin/" target="_blank" rel="noopener">LinkedIn</a>
         </div>
       </div>
     </section>
